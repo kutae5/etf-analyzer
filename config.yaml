@@ -1,0 +1,170 @@
+# ============================================================
+# ETF Market Analysis System - Configuration
+# 미국 ETF 종합 분석 설정
+# ============================================================
+
+etfs:
+  # ── 주요 지수 ──
+  indices:
+    SPY: "S&P 500"
+    QQQ: "Nasdaq 100"
+    DIA: "Dow Jones Industrial"
+    IWM: "Russell 2000"
+    VTI: "Total US Stock Market"
+
+  # ── GICS 11대 섹터 ──
+  sectors:
+    XLK: "Technology"
+    XLF: "Financials"
+    XLE: "Energy"
+    XLV: "Healthcare"
+    XLI: "Industrials"
+    XLP: "Consumer Staples"
+    XLY: "Consumer Discretionary"
+    XLU: "Utilities"
+    XLRE: "Real Estate"
+    XLC: "Communication Services"
+    XLB: "Materials"
+
+  # ── 배당 ETF ──
+  dividend:
+    SCHD: "Schwab US Dividend Equity"
+    VYM: "Vanguard High Dividend Yield"
+    HDV: "iShares Core High Dividend"
+    SPYD: "SPDR S&P 500 High Dividend"
+    VIG: "Vanguard Dividend Appreciation"
+    DGRO: "iShares Core Dividend Growth"
+    NOBL: "S&P 500 Dividend Aristocrats"
+    SDY: "SPDR S&P Dividend"
+    DVY: "iShares Select Dividend"
+    JEPI: "JPMorgan Equity Premium Income"
+    JEPQ: "JPMorgan Nasdaq Equity Premium Income"
+    DIVO: "Amplify Enhanced Dividend Income"
+
+  # ── 성장 / 가치 ──
+  growth_value:
+    VUG: "Vanguard Growth"
+    VTV: "Vanguard Value"
+    IWF: "Russell 1000 Growth"
+    IWD: "Russell 1000 Value"
+    SCHG: "Schwab US Large-Cap Growth"
+    SCHV: "Schwab US Large-Cap Value"
+    MGK: "Vanguard Mega Cap Growth"
+    QQQM: "Invesco Nasdaq 100"
+    RPV: "S&P 500 Pure Value"
+    RPG: "S&P 500 Pure Growth"
+
+  # ── 중소형주 ──
+  size:
+    IJR: "iShares Core S&P Small-Cap"
+    IJH: "iShares Core S&P Mid-Cap"
+    VB: "Vanguard Small-Cap"
+    VO: "Vanguard Mid-Cap"
+    MDY: "SPDR S&P MidCap 400"
+
+  # ── 채권 / 고정수익 ──
+  bonds:
+    TLT: "20+ Year Treasury Bond"
+    IEF: "7-10 Year Treasury Bond"
+    SHY: "1-3 Year Treasury Bond"
+    AGG: "US Aggregate Bond"
+    BND: "Vanguard Total Bond Market"
+    HYG: "High Yield Corporate Bond"
+    LQD: "Investment Grade Corporate"
+    TIP: "TIPS (Inflation Protected)"
+    EMB: "Emerging Markets Bond"
+    MUB: "National Muni Bond"
+    VCIT: "Intermediate-Term Corporate Bond"
+    VCSH: "Short-Term Corporate Bond"
+
+  # ── 원자재 ──
+  commodities:
+    GLD: "Gold"
+    SLV: "Silver"
+    USO: "Crude Oil"
+    UNG: "Natural Gas"
+    DBA: "Agriculture"
+    DBC: "Commodity Index"
+    PDBC: "Diversified Commodity"
+    PPLT: "Platinum"
+    WEAT: "Wheat"
+    CORN: "Corn"
+
+  # ── 해외 / 국가별 ──
+  international:
+    EFA: "Developed Markets (ex-US)"
+    EEM: "Emerging Markets"
+    VWO: "Emerging Markets Vanguard"
+    VEA: "FTSE Developed Markets"
+    VXUS: "Total International Stock"
+    EWJ: "Japan"
+    EWG: "Germany"
+    EWU: "United Kingdom"
+    FXI: "China Large-Cap"
+    MCHI: "MSCI China"
+    INDA: "India"
+    EWZ: "Brazil"
+    EWT: "Taiwan"
+    EWY: "South Korea"
+    EWA: "Australia"
+    EWC: "Canada"
+
+  # ── 테마 / 혁신 ──
+  thematic:
+    SMH: "Semiconductor (VanEck)"
+    SOXX: "iShares Semiconductor"
+    XBI: "S&P Biotech"
+    IBB: "iShares Biotechnology"
+    ARKK: "ARK Innovation"
+    BOTZ: "Robotics & AI"
+    LIT: "Lithium & Battery"
+    TAN: "Solar Energy"
+    ICLN: "Global Clean Energy"
+    CIBR: "Cybersecurity (First Trust)"
+    HACK: "Cyber Security (ETFMG)"
+    KWEB: "China Internet"
+    JETS: "Airlines"
+    DRIV: "Autonomous & EV"
+    BLOK: "Blockchain"
+    AIQ: "AI & Technology"
+
+  # ── 리츠 / 부동산 ──
+  real_estate:
+    VNQ: "Vanguard Real Estate"
+    IYR: "iShares US Real Estate"
+    SCHH: "Schwab US REIT"
+
+  # ── 레버리지 / 인버스 (시장 심리 추적용) ──
+  leveraged:
+    TQQQ: "Nasdaq 100 Bull 3x"
+    SQQQ: "Nasdaq 100 Bear -3x"
+    UPRO: "S&P 500 Bull 3x"
+    SOXL: "Semiconductor Bull 3x"
+    TMF: "20+ Year Treasury Bull 3x"
+    UVXY: "VIX Short-Term Futures 1.5x"
+
+  # ── 암호화폐 관련 ──
+  crypto:
+    BITO: "Bitcoin Strategy (ProShares)"
+    IBIT: "iShares Bitcoin Trust"
+
+# 시장 지표 (벤치마크)
+market_indicators:
+  "^VIX": "VIX (Volatility Index)"
+  "^TNX": "10-Year Treasury Yield"
+  "^TYX": "30-Year Treasury Yield"
+  "^IRX": "13-Week Treasury Bill"
+  "DX-Y.NYB": "US Dollar Index"
+  "GC=F": "Gold Futures"
+  "CL=F": "Crude Oil Futures"
+  "^MOVE": "MOVE Index (Bond Volatility)"
+
+# 분석 설정
+analysis:
+  period: "1y"
+  news_count: 25
+
+# Claude API 설정
+claude:
+  model: "claude-sonnet-4-6-20250514"
+  max_tokens: 16000

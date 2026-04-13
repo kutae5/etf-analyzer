@@ -1,0 +1,18 @@
+{
+  "name": "etf-analyzer",
+  "version": "0.2.0",
+  "description": "US ETF market analysis plugin — fetches prices, computes technical + regime indicators, and generates Korean-language investment reports via Claude (API or Claude Code CLI).",
+  "author": "etf-analyzer",
+  "skills": [
+    "skills/etf-report-style.md",
+    "skills/macro-analyst.md",
+    "skills/sector-dividend-strategist.md",
+    "skills/fixed-income-commodity.md",
+    "skills/global-thematic.md",
+    "skills/risk-technical.md",
+    "skills/synthesis-strategist.md"
+  ],
+  "commands": [
+    "commands/etf-report.md"
+  ]
+}

@@ -1,0 +1,13 @@
+[project]
+name = "etf-analyzer"
+version = "0.1.0"
+description = "US ETF Market Analysis System with Claude AI"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "yfinance>=0.2.0",
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "anthropic>=0.40.0",
+    "feedparser>=6.0.0",
+    "pyyaml>=6.0.0",
+]
